@@ -1,0 +1,12 @@
+package:
+  name: cluster-dma
+
+dependencies:
+ axi:          { git: "https://github.com/pulp-platform/axi.git"         , version: 0.29.1 }
+ common_cells: { git: "https://github.com/pulp-platform/common_cells.git", version: 1.21.1 }
+
+sources:
+  - rtl/axi_dma_datapath.sv
+  - rtl/axi_dma_data_mover.sv
+  - rtl/axi_dma_burst_reshaper.sv
+  - rtl/axi_dma_backend.sv
